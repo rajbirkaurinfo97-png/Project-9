@@ -54,7 +54,7 @@ def fetch_and_summarize(query, from_date=None, language='en'):
     # 5. Initialize Groq LLM model via LangChain integration
     llm = ChatGroq(
         temperature=0.3,
-        model_name="llama-3.1-8b-instant",
+        model_name="openai/gpt-oss-20b",
         groq_api_key=groq_key
     )
 
